@@ -66,6 +66,12 @@ public class MainActivity extends AppCompatActivity {
                     obwod = (float)Math.PI * r;
                     pole = (float) Math.PI * (float)Math.pow((0.5*r),2);
                 }
+                pole *= 1000;
+                pole = Math.round(pole);
+                pole /= 1000;
+                obwod *=1000;
+                obwod = Math.round(obwod);
+                obwod /= 1000;
 
                 String w = "";
                 w+="Obwód=";
